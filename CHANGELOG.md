@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/mokadev90/prueba-ci/compare/v1.4.1...v1.5.0) (2023-12-20)
+
+
+### Features
+
+* **Prueba:** add Prueba component ([4dfe0ca](https://github.com/mokadev90/prueba-ci/commit/4dfe0ca172a8b410857dbcc44ed097d1651d9acf))
+
 ## [1.4.1](https://github.com/mokadev90/prueba-ci/compare/v1.4.0...v1.4.1) (2023-12-20)
 
 
