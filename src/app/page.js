@@ -7,6 +7,7 @@ export default function Home() {
             data-asd="asd"
             data-asdf="asdf"
             data-qwe="qwe"
+            data-qweqwe="qweqwe"
             className={styles.main}
         >
             <div className={styles.description}>
