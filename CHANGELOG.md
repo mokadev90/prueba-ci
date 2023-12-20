@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/mokadev90/prueba-ci/compare/v1.4.0...v1.4.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* **Home:** fix data ([4e33e64](https://github.com/mokadev90/prueba-ci/commit/4e33e646a8239cf34e660bd9f8e24154041ecb48))
+
 # [1.4.0](https://github.com/mokadev90/prueba-ci/compare/v1.3.0...v1.4.0) (2023-12-20)
 
 
