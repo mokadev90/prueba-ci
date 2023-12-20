@@ -1,23 +1,44 @@
 {
-  "name": "prueba-ci",
-  "version": "1.5.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "semantic-release": "^22.0.12"
-  }
+    "name": "prueba-ci",
+    "version": "1.5.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "14.0.4",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.3",
+        "@commitlint/config-conventional": "^18.4.3",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.2.0",
+        "semantic-release": "^22.0.12"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css,scss,yml,yaml}": [
+            "prettier --write"
+        ],
+        "*.{js,jsx,ts,tsx,css,scss,md}": [
+            "git add"
+        ]
+    }
 }
