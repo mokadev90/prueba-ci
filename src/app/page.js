@@ -3,13 +3,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
     return (
-        <main
-            data-asd="asd"
-            data-asdf="asdf"
-            data-qwe="qwe"
-            data-qweqwe="qweqwe"
-            className={styles.main}
-        >
+        <main data-asd="asd" data-asdf="asdf" className={styles.main}>
             <div className={styles.description}>
                 <p>
                     Get started by editing&nbsp;
